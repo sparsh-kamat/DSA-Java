@@ -17,7 +17,7 @@ public class SortedMatrix {
                 {23,28,34,39},
                 {45,52,73,95}
         };
-        int target = 34;
+        int target = 23;
         System.out.println(Arrays.toString(search(matrix, target)));
 
 
@@ -72,18 +72,18 @@ public class SortedMatrix {
             return new int[]{rStart + 1, cMid};
         }
 
-        // search in 1st half
+        // search in left half of first row
         if (target <= matrix[rStart][cMid - 1]) {
             return binarysearch(matrix, rStart, 0, cMid-1, target);
         }
-        // search in 2nd half
+        // search in right half of first row
         if (target >= matrix[rStart][cMid + 1] && target <= matrix[rStart][cols - 1]) {
             return binarysearch(matrix, rStart, cMid + 1, cols - 1, target);
         }
-        // search in 3rd half
+        // search in left half of second row
         if (target <= matrix[rStart + 1][cMid - 1]) {
             return binarysearch(matrix, rStart + 1, 0, cMid-1, target);
-        } else {
+        } else { //search in right half of second row
             return binarysearch(matrix, rStart + 1, cMid + 1, cols - 1, target);
         }
     }

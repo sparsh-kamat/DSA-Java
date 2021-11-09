@@ -1,4 +1,3 @@
 # DSA-Java
-
-Hi, Someday if anyone will read this when I make this repo public, I want you to know where and what I started with. 
-This is kinda like a log of all my projects and questions I'll solve when I learn DSA.
+Starting my coding Journey by learning Data Structures and Algorithms in Java.
+All the files are the codes and questions I've solved by watching [Kunal Kushwaha's DSA Bootcamp](https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)

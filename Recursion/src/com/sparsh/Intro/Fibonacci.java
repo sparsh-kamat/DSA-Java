@@ -1,4 +1,4 @@
-package com.sparsh;
+package com.sparsh.Intro;
 
 public class Fibonacci {
     public static void main(String[] args) {
